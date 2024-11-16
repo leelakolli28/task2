@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Novotel Hotel Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Image -->
+    <div class="background">
+        <header>
+            <div class="navbar">
+                <a href="#home">Home</a>
+                <a href="#image-gallery">Rooms</a>
+                <a href="#booking-form">Contact</a>
+            </div>
+        </header>
+    </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Novotel</h1>
+            <img src="https://www.novotel-visakhapatnam.com/wp-content/uploads/sites/24/2022/10/slideshow-home-1-2200x1200.jpg"
+                height="500" width="800">
+            <h3>Novotel Visakhapatnam Varun Beach</h3> <h4>Experience comfort amindst luxury</h4>
+                <p class="p1">Spoil yourself in 5-star seafront luxury at Novotel Visakhapatnam Varun Beach hotel. Spare contemporary
+                design makes your room a calm haven, and picture windows offer you dazzling Bay of Bengal views.
+                Rise and shine with a dip in the infinity pool and breakfast with an ocean backdrop at the lavish buffet
+                spread at Novotel.</p>
+                <p>hotel shares a close proximity with the city Railway station, Rushikonda Beach, Vizag Port and the
+                airport.
+                The popular Submarine Museum is just a walk away. The hotel’s city centre location makes it approachable
+                from industrial and business hubs.
+                Novotel Visakhapatnam forms part of a complex consisting of an INOX multiplex, night club and a shopping
+                mall.
+                Novotel Visakhapatnam Varun Beach is among the only hotels in Visakhapatnam that is ocean facing. The
+                hotel offers calming views of the sea from every nook and corner.</p>
+        </section>
+        <h5>Contact Form</h5>
+        <section id="booking-form">
+             <h2>Book Your Stay at Novotel Hotel</h2>
+            <form id="contactForm" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="checkin">Check-in Date:</label>
+                    <input type="date" id="checkin" name="checkin" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkout">Check-out Date:</label>
+                    <input type="date" id="checkout" name="checkout" required>
+                </div>
+                <button type="submit" id="submit">Submit Booking</button>
+            </form>
+            <div id="formMessage" style="display:none; color: green; margin-top: 10px;">Booking Confirmed!</div>
+        </section>
+         
+        
+        <section id="image-gallery">
+            <h2>Our Rooms</h2>
+                <div class="gallery">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/268951061.jpg?k=15b07d494f036cf6aa59cc7543b1db532e1f31883fe6fa4af06396a2e2300b52&o=&hp=1"
+                        alt="Room 1" class="gallery-item">
+                    <img src="https://www.ahstatic.com/photos/7535_rsr001_00_p_1024x768.jpg" alt="Room 2"
+                        class="gallery-item">
+                    <img src="https://www.novotel-visakhapatnam.com/wp-content/uploads/sites/24/2022/12/Salon.jpg"
+                        alt="Room 3" class="gallery-item">
+                    <img src="https://image-tc.galaxy.tf/wijpeg-6tmw65fa9f7v8orglveyerc33/ocean-view-balcony-1.jpg?rotate=0&crop=35%2C99%2C1419%2C945&width=1920"
+                        alt="Room 4" class="gallery-item">
+                </div>
+       
+            
+            <button onclick="addImage()">Add Image</button>
+        </section>
+        
+        <!-- To-Do List Section -->
+        <section id="todo-list">
+            <h2>To-Do List</h2>
+            <div class="todo-container">
+                <input type="text" id="todoInput" placeholder="Enter a new task" class="todo-input">
+                <button onclick="addTask()" class="todo-btn">Add Task</button>
+
+                <ul id="taskList" class="task-list">
+                    <!-- Tasks will appear here -->
+                </ul>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Novotel Hotels. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
